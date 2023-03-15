@@ -1,0 +1,26 @@
+.CardHome{
+  --ion-card-background: linear-gradiente(139deg, #831affab 0%, transparent 100%);
+  --ion-item-background: transparent;
+  
+  border-radius: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+ion-card:hover{
+  transform: scale(1.05);
+}
+
+
+.Thumb-image{
+  animation: nomeDaAnimacao 0.8s infinite alternate;
+}
+
+@keyframes nomeDaAnimacao{
+  0%{
+    transform: translate(0px, 5px);
+  }
+  100%{
+    transform: translate(0px, -5px);
+  }
+}

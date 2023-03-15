@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(private route: Router) {}
+
+  DonationsPage(){
+    this.route.navigate(['/tabs/tab2']);
+  }
+
+  ReceivePage(){
+    this.route.navigate(['/tabs/tab3']);
+  }
+
 
 }
