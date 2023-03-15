@@ -9,16 +9,23 @@ export class Tab2Page {
 
   constructor() {}
 
+  openMaps(url: string){
+    window.open(url, '_blank');
+  }
+
   donateBlood(){
-    window.open('https://www.google.com.br/maps/search/pontos+de+doa%C3%A7%C3%A3o+de+sangue', '_blank');
+    this.openMaps('https://www.google.com.br/maps/search/pontos+de+doa%C3%A7%C3%A3o+de+sangue');
   }
 
   donateClothes(){
-    window.open('https://www.google.com.br/maps/search/pontos+de+doa%C3%A7%C3%A3o+de+roupas', '_blank');
+    this.openMaps('https://www.google.com.br/maps/search/pontos+de+doa%C3%A7%C3%A3o+de+roupas')
   }
 
   donateFood(){
-    window.open('https://www.google.com.br/maps/search/pontos+de+doa%C3%A7%C3%A3o+de+alimentos/maps/search/pontos+de+doa%C3%A7%C3%A3o+de+roupas', '_blank');
+    this.openMaps('https://www.google.com.br/maps/search/pontos+de+doa%C3%A7%C3%A3o+de+alimentos/maps/search/pontos+de+doa%C3%A7%C3%A3o+de+roupas')
   }
+
+
+
 
 }
