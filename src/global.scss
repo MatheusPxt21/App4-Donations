@@ -28,4 +28,23 @@
 
 .title{
   text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  font-weight:900;
+  font-size: larger;
+}
+
+:root{
+
+  /* toolbar */
+  --ion-toolbar-background: #ff00aa;
+  --ion-toolbar-color: #ffaa00;
+
+  /* ion-content */
+  --ion-background-color: linear-gradient(180deg, #ff00aa, #00aaff 130%);
+  
+  /* tabs bar */
+  --ion-tab-bar-background: #00aaff;
+  --ion-tab-bar-color: #aaff00;
+  --ion-tab-bar-color-selected: #aa00ff;
+
 }
