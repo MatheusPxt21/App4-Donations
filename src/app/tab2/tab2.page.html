@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="animate__animated animate__fadeInRight">
 
 
   <ion-card>
@@ -18,13 +18,43 @@
     <ion-card-content>
       See how you can help them below.
     </ion-card-content>
-
-    <div class="card-buttons">
-      <ion-button fill="clear">Action 1</ion-button>
-      <ion-button fill="clear">Action 2</ion-button>
-    </div>
-
   </ion-card>
+
+
+  <ion-card class="CardHome" (click)="donateBlood()" >
+    <ion-item>
+      <ion-thumbnail slot="start" class="Thumb-image">
+        <img alt="" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+      </ion-thumbnail>
+      <ion-label>
+        Blood Donation
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="CardHome" (click)="donateClothes()">
+    <ion-item>
+      <ion-thumbnail slot="start" class="Thumb-image">
+        <img alt="" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+      </ion-thumbnail>
+      <ion-label>
+        Clothes Donation
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="CardHome" (click)="donateFood()">
+    <ion-item>
+      <ion-thumbnail slot="start" class="Thumb-image">
+        <img alt="" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+      </ion-thumbnail>
+      <ion-label>
+        Food Donation
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+
 
   
 </ion-content>
